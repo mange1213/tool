@@ -1,14 +1,13 @@
-# Tool App — New Repository Package
+# Tool App — new repository build
 
-## Publish on GitHub Pages
-1. Create a **new public repository** named `tool-app-new` (or another name you prefer).
-2. Upload the files from this folder directly into the repository root (not the enclosing folder).
-3. In Settings → Pages, select Deploy from a branch, branch `main`, folder `/(root)`, then Save.
-4. Wait for the Pages site to publish. The URL will be `https://YOUR-USERNAME.github.io/tool-app-new/`.
-5. Open `.../manifest.webmanifest`, `.../icon-192.png`, and `.../sw.js` to verify they load.
+## Publish with GitHub Pages
+1. Upload every file in this folder to the root of a new repository (not inside an extra folder).
+2. Open Settings → Pages. Select Deploy from a branch, branch `main`, folder `/(root)`, then Save.
+3. Wait until GitHub says the site is live. Open the published URL in Chrome.
+4. To install on Android, open the site directly in Chrome (not an in-app browser), tap ⋮, then choose Install app or Add to Home screen. If neither option appears, keep using the website while checking Chrome updates and the published URL.
 
-## Moving existing data
-On the OLD working tablet app, open Backup & Restore and download a complete JSON backup. Keep a second copy somewhere safe. Open the new site, go to Backup / Restore, and import that JSON. Check equipment, workers and active checkouts before relying on it. Do not erase the old app until you have confirmed the new copy contains the correct data.
+## Importing a tool list
+The Equipment Register has an Import tool list (CSV) option. Export your spreadsheet as CSV first. Use headers such as `Name`, `Equipment Number`, `Serial Number`, `Category`, `Make / Model`, `Quantity`, `Weight kg`. Category values are preserved per row. Comma- and semicolon-separated CSV files are supported. Download a backup before importing.
 
-## Important limits
-This is a local-first app: each browser/device has its own records. It does not automatically synchronize the phone and tablet. This package is rebuilt from the original ZIP but is not yet live-tested on your device.
+## Data safety
+Data is stored locally in each browser/device. A new site does not automatically share records with the old site or between phone and tablet. Download a complete backup from the old app and import it on the new site. Keep the old site until records are verified.
